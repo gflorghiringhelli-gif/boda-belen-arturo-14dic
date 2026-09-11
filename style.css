@@ -440,30 +440,20 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 15px;
-    gap: 10px;
 }
 
 .parent-col { 
     flex: 1; 
-    padding: 0 4px; 
-}
-
-.parent-family-label {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 9px;
-    letter-spacing: 1.5px;
-    color: #556b4f;
-    text-transform: uppercase;
-    margin-bottom: 4px;
+    padding: 0 2px; 
 }
 
 .parent-names-dark {
     font-family: 'CormorantGaramond-Regular', serif;
-    font-size: 15px;
+    font-size: 13.5px; /* Tamaño exacto para que entre en una sola línea fluida */
     color: #333333;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
+    white-space: nowrap; /* Evita que las palabras bajen de línea solas */
 }
 
 .cruz-simbolo {
@@ -475,12 +465,10 @@ body {
 
 .parents-divider-gold {
     width: 1px;
-    min-height: 90px;
+    height: 95px;
     background-color: #d4af37;
     margin: 0 4px;
-    align-self: stretch;
 }
-
 .mt-8 { margin-top: 8px; }
 
 /* UBICACIONES */
