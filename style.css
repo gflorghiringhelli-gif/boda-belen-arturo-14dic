@@ -47,7 +47,7 @@ body {
     z-index: 9998;
 }
 
-/* INTRO SOBRE - USANDO 100dvh PARA QUE NO SE CORTE EN CELULARES */
+/* INTRO SOBRE - AJUSTE PERFECTO EN CELULARES */
 #contenedor-principal {
     position: fixed;
     top: 0;
@@ -59,19 +59,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     cursor: pointer;
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 #videoSobre {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
 }
 
 #capa-boton {
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
     width: 100%;
     text-align: center;
     z-index: 10000;
