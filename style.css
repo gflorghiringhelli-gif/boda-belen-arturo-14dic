@@ -434,20 +434,35 @@ body {
     text-transform: uppercase;
 }
 
+/* SECCIÓN DE PADRES MEJORADA */
 .parents-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 15px;
+    gap: 10px;
 }
 
-.parent-col { flex: 1; padding: 0 4px; }
+.parent-col { 
+    flex: 1; 
+    padding: 0 4px; 
+}
+
+.parent-family-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #556b4f;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
 
 .parent-names-dark {
     font-family: 'CormorantGaramond-Regular', serif;
-    font-size: 14px;
+    font-size: 15px;
     color: #333333;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
 }
 
@@ -460,10 +475,13 @@ body {
 
 .parents-divider-gold {
     width: 1px;
-    height: 110px;
+    min-height: 90px;
     background-color: #d4af37;
-    margin: 0 6px;
+    margin: 0 4px;
+    align-self: stretch;
 }
+
+.mt-8 { margin-top: 8px; }
 
 /* UBICACIONES */
 .venue-card-sofi-clean {
